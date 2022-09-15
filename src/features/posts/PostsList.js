@@ -6,10 +6,10 @@ export const PostsList = () => {
 
   const renderedPosts = posts.map(
     post => (
-      <div className="post-excerpt" key={post.id}>
+      <article className="post-excerpt" key={post.id}>
         <h3>{post.title}</h3>
         <p className="post-content">{post.content.substring(0, 100)}</p>
-      </div>
+      </article>
     )
   )
 
